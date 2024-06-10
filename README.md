@@ -44,4 +44,9 @@ Replica делает *promote* только в том случае, если и 
 - arbiter.log (Arbiter);
 - failover.log (Replica).
 
+## **Тестирование**
+Для того, чтобы протестировать работу программ-агентов, достаточно потушить PostgreSQL на Master командой *systemctl stop postgresql*.
+
+После этого произойдет автоматический promote базы данных на Replica и она станет доступной для записи.
+
 
