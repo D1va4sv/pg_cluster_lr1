@@ -49,4 +49,5 @@ Replica делает *promote* только в том случае, если и 
 
 После этого произойдет автоматический promote базы данных на Replica и она станет доступной для записи.
 
-
+<pre>su - postgres
+psql -c "CREATE TABLE test_table2 (id INT, name TEXT);"</pre>
